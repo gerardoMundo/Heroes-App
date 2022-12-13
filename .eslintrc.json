@@ -6,7 +6,8 @@
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
-    "prettier/react"
+    "prettier",
+    "plugin:react/jsx-runtime"
   ],
   "overrides": [],
   "parserOptions": {
@@ -15,9 +16,9 @@
   },
   "plugins": ["react"],
   "rules": {
-    "prettier/prettier": "warn",
+    "no-unused-vars": "warn",
     "quotes": ["warn", "single"],
     "semi": ["warn", "always"],
-    "properties": "always"
+    "arrow-body-style": ["error", "always"]
   }
 }
