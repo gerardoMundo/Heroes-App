@@ -9,7 +9,9 @@ export const LoginPage = () => {
   const onLogin = () => {
     login('Gerardo Mundo');
 
-    navigate('/marvel', {
+    const lastPath = localStorage.getItem('lastPath') || '/';
+
+    navigate(lastPath, {
       replace: true,
     });
   };
